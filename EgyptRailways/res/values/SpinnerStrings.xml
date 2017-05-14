@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "cities" >
+        <item>Select a city...</item>            
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Fayoum</item>
+        <item>Dakahleya</item>
+        <item>Aswan</item>
+        <item>Luxor</item>
+        <item>Damanhour</item>
+        <item>Asuit</item>
+        <item>Munufeya</item>
+    </string-array>
+    
+</resources>

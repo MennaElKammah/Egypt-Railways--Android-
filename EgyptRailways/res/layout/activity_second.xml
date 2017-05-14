@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenabstract1"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.egyptrailways.Second" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/trainTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Trains Schedule"
+            android:textColor="@color/Azure"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Spinner
+            android:id="@+id/times"
+            android:layout_width="220dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/color2"
+            android:entries="@array/trainSchedule" />
+
+        <TextView
+            android:id="@+id/toCities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the Distination City:"
+            android:textColor="@color/Azure"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Spinner
+            android:id="@+id/srcCities"
+            android:layout_width="220dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/color2"
+            android:entries="@array/cities" />
+
+        <TextView
+            android:id="@+id/fromCities"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:text="Select the City you are travelling from:"
+            android:textColor="@color/Azure"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Spinner
+            android:id="@+id/distCities"
+            android:layout_width="220dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/color2"
+            android:entries="@array/cities" />
+
+        <TextView
+            android:id="@+id/pricesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prices of Tickets"
+            android:textColor="@color/Azure"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Spinner
+            android:id="@+id/prices"
+            android:layout_width="220dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/color2"
+            android:entries="@array/prices" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/color1"
+            android:text="Submit"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="100dp"
+			android:layout_height="40dp"
+            android:background="@drawable/color1"
+            android:text="Log out" />
+    </LinearLayout>
+
+</LinearLayout>
